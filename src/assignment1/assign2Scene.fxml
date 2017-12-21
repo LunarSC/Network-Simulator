@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="mainGrid" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment1.FXMLDocumentController2">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1175.0" minWidth="10.0" prefWidth="588.0" />
+      <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+    <RowConstraints maxHeight="728.0" minHeight="10.0" prefHeight="728.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="365.0" minHeight="10.0" prefHeight="165.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Circle fx:id="travelingCircle" fill="#a819b2" onMouseClicked="#circleClicked" radius="15.0" stroke="BLACK" strokeType="INSIDE" translateX="50.0" translateY="50.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <effect>
+            <DisplacementMap>
+               <mapData>
+                  <FloatMap />
+               </mapData>
+            </DisplacementMap>
+         </effect>
+      </Circle>
+      <Button fx:id="submitButton" mnemonicParsing="false" onAction="#submitButtonClicked" text="Submit" translateX="300.0" translateY="50.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#pauseButtonClicked" text="Pause/Play" translateX="353.0" translateY="50.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField id="PhL1" fx:id="PhL1" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFa71A; -fx-border-color: BLACK;" text="Physical Layer" translateX="100.0" translateY="225.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField id="DL1" fx:id="DL1" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFa71A; -fx-border-color: BLACK;" text="Data Link Layer" translateX="100.0" translateY="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField id="NL1" fx:id="NL1" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFa71A; -fx-border-color: BLACK;" text="Network Layer" translateX="100.0" translateY="175.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField id="TL1" fx:id="TL1" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFa71A; -fx-border-color: BLACK;" text="Transport Layer" translateX="100.0" translateY="150.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="SL1" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFa71A; -fx-border-color: BLACK;" text="Session Layer" translateX="100.0" translateY="125.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="PL1" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFa71A; -fx-border-color: BLACK;" text="Presentation Layer" translateX="100.0" translateY="100.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="AL1" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="200.0" style="-fx-background-color: FFa71A; -fx-border-color: BLACK;" text="Application Layer" translateX="100.0" translateY="75.0" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="inputBox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="Input" style="-fx-background-color: FFa71A; -fx-border-color: BLACK;" translateX="100.0" translateY="50.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="PhL2" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Physical Layer" translateX="725.0" translateY="225.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="DL2" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Data Link Layer" translateX="725.0" translateY="200.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="NL2" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Network Layer" translateX="725.0" translateY="175.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="TL2" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Transport Layer" translateX="725.0" translateY="150.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="SL2" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Session Layer" translateX="725.0" translateY="125.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="PL2" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Presentation Layer" translateX="725.0" translateY="100.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="AL2" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Application Layer" translateX="725.0" translateY="75.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="outputBox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" translateX="725.0" translateY="50.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="connectingLine" endX="775.0" translateX="105.0" translateY="440.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS" />
+      <ImageView translateX="200.0" translateY="400.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/wireless_router.png" />
+         </image>
+      </ImageView>
+      <ImageView nodeOrientation="RIGHT_TO_LEFT" translateX="735.0" translateY="400.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/wireless_router.png" />
+         </image>
+      </ImageView>
+      <Line endY="50.0" startY="-110.0" translateX="130.0" translateY="250.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line endY="50.0" startY="-125.0" translateX="875.0" translateY="250.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <ImageView fx:id="rightComp" nodeOrientation="RIGHT_TO_LEFT" translateX="835.0" translateY="400.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/computer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftComp" translateX="100.0" translateY="400.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/computer.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="travelingCircle2" fill="#8a3c08" onMouseClicked="#circle2Clicked" radius="15.0" stroke="BLACK" strokeType="INSIDE" translateX="15.0" translateY="50.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <effect>
+            <DisplacementMap>
+               <mapData>
+                  <FloatMap />
+               </mapData>
+            </DisplacementMap>
+         </effect>
+      </Circle>
+      <Line fx:id="branchLine" endX="200.0" endY="-100.0" rotate="180.0" translateX="275.0" translateY="340.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line endX="160.0" translateX="475.0" translateY="340.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <ImageView nodeOrientation="RIGHT_TO_LEFT" translateX="475.0" translateY="295.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/wireless_router.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="outputBox2" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" translateX="450.0" translateY="50.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="PhL3" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Physical Layer" translateX="450.0" translateY="224.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="AL3" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Application Layer" translateX="450.0" translateY="74.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="PL3" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Presentation Layer" translateX="450.0" translateY="99.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="SL3" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Session Layer" translateX="450.0" translateY="124.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="TL3" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Transport Layer" translateX="450.0" translateY="149.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="NL3" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Network Layer" translateX="450.0" translateY="174.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="DL3" alignment="TOP_CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: FFA71A; -fx-border-color: BLACK;" text="Data Link Layer" translateX="450.0" translateY="199.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line startY="-50.0" translateX="615.0" translateY="250.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <ImageView fx:id="midComp" nodeOrientation="RIGHT_TO_LEFT" translateX="575.0" translateY="295.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/computer.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="txtArea" editable="false" maxWidth="1602.0" prefHeight="172.0" prefWidth="1160.0" style="-fx-border-color: SKYBLUE;" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+   </children>
+</GridPane>

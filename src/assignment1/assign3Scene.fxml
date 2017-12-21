@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="mainGrid" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment1.FXMLDocumentController3">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1175.0" minWidth="10.0" prefWidth="1024.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="692.0" minWidth="0.0" prefWidth="0.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+    <RowConstraints maxHeight="800.0" minHeight="10.0" prefHeight="798.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextArea fx:id="txtArea" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="194.0" prefWidth="424.0" promptText="Message in binary will appear here when you click on any circle at a layer.. Physical Signals are shown at the bottom of the screen automatically." style="-fx-border-color: SKYBLUE;" translateX="300.0" translateY="50.0" wrapText="true" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <MenuBar GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <menus>
+            <Menu mnemonicParsing="false" />
+         </menus>
+      </MenuBar>
+      <TextField fx:id="outputBox" alignment="CENTER" maxWidth="200.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #cc1212; -fx-border-color: #000000;" translateX="724.0" translateY="50.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="SL2" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="724.0" translateY="122.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="NL2" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="724.0" translateY="170.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="AL2" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="724.0" translateY="74.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="DL2" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="724.0" translateY="194.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="TL2" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="724.0" translateY="146.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="PL2" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="724.0" translateY="98.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data Link Layer" textAlignment="CENTER" translateX="724.0" translateY="199.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Presentation Layer" textAlignment="CENTER" translateX="724.0" translateY="103.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Session Layer" textAlignment="CENTER" translateX="724.0" translateY="127.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transport Layer" textAlignment="CENTER" translateX="724.0" translateY="151.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Network Layer" textAlignment="CENTER" translateX="724.0" translateY="175.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Application Layer" textAlignment="CENTER" translateX="724.0" translateY="79.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="PhL2" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="724.0" translateY="218.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="r2C2" endX="130.0" translateX="744.0" translateY="440.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="l9" endX="75.0" endY="-125.0" translateX="669.0" translateY="440.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="l3" endX="75.0" endY="125.0" translateX="265.0" translateY="440.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="C2R2" endX="100.0" startX="-35.0" translateX="130.0" translateY="440.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="l1Line" endY="50.0" startY="-115.0" translateX="130.0" translateY="243.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="l2Line" endY="50.0" startY="-125.0" translateX="874.0" translateY="243.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="l0" endX="75.0" endY="-125.0" translateX="265.0" translateY="315.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <ImageView fx:id="r0" translateX="230.0" translateY="400.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/wireless_router.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftComp" translateX="100.0" translateY="400.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/computer.png" />
+         </image>
+      </ImageView>
+      <Line fx:id="l4" endX="329.0" translateX="340.0" translateY="315.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="l6" endX="329.0" translateX="340.0" translateY="565.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="l2" endX="75.0" endY="-125.0" translateX="340.0" translateY="440.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="l1" endX="75.0" endY="125.0" translateX="340.0" translateY="315.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="l8" endX="75.0" endY="125.0" translateX="669.0" translateY="315.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="l10" endX="75.0" endY="125.0" translateX="592.0" translateY="440.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="l7" endX="75.0" endY="-125.0" translateX="592.0" translateY="315.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Line fx:id="l5" endX="79.0" startX="-100.0" translateX="415.0" translateY="440.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <ImageView fx:id="r7" nodeOrientation="RIGHT_TO_LEFT" translateX="559.0" translateY="400.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/wireless_router.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r6" nodeOrientation="RIGHT_TO_LEFT" translateX="634.0" translateY="525.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/wireless_router.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r4" nodeOrientation="RIGHT_TO_LEFT" translateX="634.0" translateY="275.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/wireless_router.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r3" translateX="300.0" translateY="525.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/wireless_router.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r1" translateX="300.0" translateY="275.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/wireless_router.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r2" translateX="380.0" translateY="400.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/wireless_router.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r5" nodeOrientation="RIGHT_TO_LEFT" translateX="709.0" translateY="400.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/wireless_router.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rightComp" nodeOrientation="RIGHT_TO_LEFT" translateX="839.0" translateY="400.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <image>
+            <Image url="@icons/computer.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="t8" strokeType="OUTSIDE" strokeWidth="0.0" text="t," translateX="714.0" translateY="375.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t9" strokeType="OUTSIDE" strokeWidth="0.0" text="t," translateX="706.5" translateY="502.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t7" strokeType="OUTSIDE" strokeWidth="0.0" text="t," translateX="631.5" translateY="377.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t10" strokeType="OUTSIDE" strokeWidth="0.0" text="t," translateX="639.0" translateY="502.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t2" strokeType="OUTSIDE" strokeWidth="0.0" text="t," translateX="377.5" translateY="502.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t1" strokeType="OUTSIDE" strokeWidth="0.0" text="t," translateX="390.0" translateY="377.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t3" strokeType="OUTSIDE" strokeWidth="0.0" text="t," translateX="310.0" translateY="502.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t0" strokeType="OUTSIDE" strokeWidth="0.0" text="t," translateX="302.5" translateY="377.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t6" strokeType="OUTSIDE" strokeWidth="0.0" text="t," translateX="500.0" translateY="550.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t5" strokeType="OUTSIDE" strokeWidth="0.0" text="t," translateX="500.0" translateY="425.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t4" strokeType="OUTSIDE" strokeWidth="0.0" text="t," translateX="500.0" translateY="300.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="DL1" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="100.0" translateY="194.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="NL1" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="100.0" translateY="170.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="TL1" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="100.0" translateY="146.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="SL1" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="100.0" translateY="122.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="PL1" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="100.0" translateY="98.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="AL1" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="100.0" translateY="74.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Rectangle fx:id="PhL1" arcHeight="5.0" arcWidth="5.0" fill="#cc1212" height="25.0" stroke="BLACK" strokeType="INSIDE" translateX="100.0" translateY="218.0" width="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Physical Layer" textAlignment="CENTER" translateX="724.0" translateY="223.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Physical Layer" textAlignment="CENTER" translateX="100.0" translateY="223.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Network Layer" textAlignment="CENTER" translateX="100.0" translateY="175.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data Link Layer" textAlignment="CENTER" translateX="100.0" translateY="199.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transport Layer" textAlignment="CENTER" translateX="100.0" translateY="151.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Session Layer" textAlignment="CENTER" translateX="100.0" translateY="127.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Application Layer" textAlignment="CENTER" translateX="100.0" translateY="79.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Presentation Layer" textAlignment="CENTER" translateX="100.0" translateY="103.0" wrappingWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <TextField fx:id="inputBox" alignment="CENTER" maxWidth="200.0" onAction="#submitButtonClicked" prefHeight="25.0" prefWidth="200.0" promptText="Input" style="-fx-background-color: #cc1212; -fx-border-color: #000000;" translateX="100.0" translateY="50.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t61" strokeType="OUTSIDE" strokeWidth="0.0" text="x" translateX="511.0" translateY="550.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t41" strokeType="OUTSIDE" strokeWidth="0.0" text="x" translateX="510.0" translateY="300.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t31" strokeType="OUTSIDE" strokeWidth="0.0" text="x" translateX="319.0" translateY="502.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t101" strokeType="OUTSIDE" strokeWidth="0.0" text="x" translateX="649.0" translateY="502.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t21" strokeType="OUTSIDE" strokeWidth="0.0" text="x" translateX="388.0" translateY="502.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t51" strokeType="OUTSIDE" strokeWidth="0.0" text="x" translateX="508.5" translateY="425.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t91" strokeType="OUTSIDE" strokeWidth="0.0" text="x" translateX="717.0" translateY="502.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t81" strokeType="OUTSIDE" strokeWidth="0.0" text="x" translateX="724.0" translateY="375.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t71" strokeType="OUTSIDE" strokeWidth="0.0" text="x" translateX="642.0" translateY="377.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t01" strokeType="OUTSIDE" strokeWidth="0.0" text="x" translateX="312.0" translateY="377.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="t11" strokeType="OUTSIDE" strokeWidth="0.0" text="x" translateX="398.5" translateY="377.5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Circle fx:id="circle2" fill="BLUE" radius="15.0" stroke="BLACK" strokeType="INSIDE" translateX="85.0" translateY="40.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Circle fx:id="travelingCircle" fill="RED" onMouseClicked="#circleClicked" radius="15.0" stroke="BLACK" strokeType="INSIDE" translateX="85.0" translateY="50.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <effect>
+            <DisplacementMap>
+               <mapData>
+                  <FloatMap />
+               </mapData>
+            </DisplacementMap>
+         </effect>
+      </Circle>
+      <Button mnemonicParsing="false" onAction="#refresh" text="Refresh" translateX="160.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Button mnemonicParsing="false" onAction="#pauseButtonClicked" text="Pause/Play" translateX="90.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Button alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" onAction="#submitButtonClicked" text="Send message" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="routerInfo" strokeType="OUTSIDE" strokeWidth="0.0" text="I" textAlignment="RIGHT" translateX="875.0" translateY="500.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+      <ScrollPane fx:id="paneForLines" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="190.0" prefWidth="1024.0" translateY="610.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+        <content>
+          <AnchorPane fx:id="ancP" />
+        </content>
+      </ScrollPane>
+   </children>
+</GridPane>
